@@ -1,29 +1,22 @@
 //
-//  Playground.m
+//  PlaygroundVC+play.m
 //  UIAlgo
 //
-//  Created by yangxinlei on 2017/6/1.
+//  Created by yangxinlei on 2017/6/14.
 //  Copyright © 2017年 qunar. All rights reserved.
 //
 
-#import "Playground.h"
+#import "PlaygroundVC+play.h"
 
 // UI 数据结构
 #import "UIArray.h"
 
+@implementation PlaygroundVC (play)
 
-@implementation Playground
 
-+ (instancetype)mainPlayground
-{
-    static dispatch_once_t onceToken;
-    static Playground *_instance;
-    dispatch_once(&onceToken, ^{
-        _instance = [Playground new];
-    });
-    return _instance;
-}
-
+/**
+ write algorithms here.
+ */
 - (void)play
 {
     UIArray *arr = [[UIArray alloc] init];
@@ -35,7 +28,6 @@
     {
         [arr pop];
     }
-    
 }
 
 @end

@@ -10,4 +10,7 @@
 
 @interface PlaygroundVC : UIViewController
 
+// 有且只有一个playground
++ (instancetype) mainPlaygroundVC;
+
 @end

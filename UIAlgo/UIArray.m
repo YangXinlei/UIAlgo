@@ -8,6 +8,7 @@
 
 #import "UIArray.h"
 #import "ElementView.h"
+#import "PlaygroundVC.h"
 
 typedef void(^UIUpdateBlock)();
 
@@ -24,11 +25,11 @@ typedef void(^UIUpdateBlock)();
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    CGRect playgroundFrame = [UIDataStruct playgroundView].frame;
+    CGRect playgroundFrame = thePlaygroundView.frame;
     frame = CGRectMake(CGRectGetMidX(playgroundFrame), CGRectGetMidY(playgroundFrame), 0, 0);
     if (self = [super initWithFrame:frame])
     {
-        [[UIDataStruct playgroundView] addSubview:self];
+        [thePlaygroundView addSubview:self];
         _blocks = [NSMutableArray new];
         _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(runABlock) userInfo:nil repeats:YES];
     }
@@ -61,6 +62,7 @@ typedef void(^UIUpdateBlock)();
 
 - (id)pop
 {
+    [self setFrame:CGRectMake(100, 100, 100, 100)];
     id obj = [self.array lastObject];
     [self.array removeLastObject];
     
@@ -69,7 +71,7 @@ typedef void(^UIUpdateBlock)();
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (strongSelf.elements.count)
         {
-            [strongSelf.elements.lastObject setDeleted:YES];
+//            [strongSelf.elements.lastObject setDeleted:YES];
             [strongSelf.elements removeLastObject];
         }
         

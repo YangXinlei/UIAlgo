@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <objc/runtime.h>
+#import "PlaygroundVC.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [_window setRootViewController:[PlaygroundVC mainPlaygroundVC]];
+    
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 

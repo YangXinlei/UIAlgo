@@ -10,14 +10,5 @@
 
 @implementation UIDataStruct
 
-+ (UIScrollView *)playgroundView
-{
-    return (UIScrollView *)[[[[UIApplication sharedApplication] keyWindow] rootViewController] view];
-}
-
-+ (UIViewController *)playgroundViewController
-{
-    return [[[UIApplication sharedApplication] keyWindow] rootViewController];
-}
 
 @end

@@ -34,5 +34,5 @@ typedef enum : NSUInteger {
 @property (nonatomic, copy) NSString    *info;
 @property (nonatomic, assign) BOOL       highlight;
 @property (nonatomic, assign) EVShape    shape;
-@property (nonatomic, assign) BOOL       deleted;
+
 @end

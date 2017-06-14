@@ -11,11 +11,11 @@
 		500426FD1ED86480004401C0 /* PlaygroundVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 500426FC1ED86480004401C0 /* PlaygroundVC.m */; };
 		5029DB981ED7CD1E008D19E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029DB971ED7CD1E008D19E6 /* main.m */; };
 		5029DB9B1ED7CD1E008D19E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029DB9A1ED7CD1E008D19E6 /* AppDelegate.m */; };
-		5029DBA11ED7CD1E008D19E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029DB9F1ED7CD1E008D19E6 /* Main.storyboard */; };
 		5029DBA31ED7CD1E008D19E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5029DBA21ED7CD1E008D19E6 /* Assets.xcassets */; };
 		5029DBA61ED7CD1E008D19E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029DBA41ED7CD1E008D19E6 /* LaunchScreen.storyboard */; };
 		5029DBAF1ED7CD42008D19E6 /* UIArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029DBAE1ED7CD42008D19E6 /* UIArray.m */; };
-		50B6BB461EE04DDC00210202 /* Playground.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6BB451EE04DDC00210202 /* Playground.m */; };
+		50EBE85C1EF1171100274C58 /* PlaygroundVC+play.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EBE85B1EF1171100274C58 /* PlaygroundVC+play.m */; };
+		50EBE8611EF11C5200274C58 /* PlaygroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50EBE8601EF11C5200274C58 /* PlaygroundView.m */; };
 		50F606341EE43C020000DF02 /* UIDataStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F606331EE43C020000DF02 /* UIDataStruct.m */; };
 /* End PBXBuildFile section */
 
@@ -28,16 +28,19 @@
 		5029DB971ED7CD1E008D19E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5029DB991ED7CD1E008D19E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5029DB9A1ED7CD1E008D19E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5029DBA01ED7CD1E008D19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5029DBA21ED7CD1E008D19E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5029DBA51ED7CD1E008D19E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5029DBA71ED7CD1E008D19E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5029DBAD1ED7CD42008D19E6 /* UIArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIArray.h; sourceTree = "<group>"; };
 		5029DBAE1ED7CD42008D19E6 /* UIArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIArray.m; sourceTree = "<group>"; };
-		50B6BB441EE04DDC00210202 /* Playground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playground.h; sourceTree = "<group>"; };
-		50B6BB451EE04DDC00210202 /* Playground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playground.m; sourceTree = "<group>"; };
+		50EBE85A1EF1171100274C58 /* PlaygroundVC+play.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlaygroundVC+play.h"; sourceTree = "<group>"; };
+		50EBE85B1EF1171100274C58 /* PlaygroundVC+play.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PlaygroundVC+play.m"; sourceTree = "<group>"; };
+		50EBE85E1EF1199D00274C58 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		50EBE85F1EF11C5200274C58 /* PlaygroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaygroundView.h; sourceTree = "<group>"; };
+		50EBE8601EF11C5200274C58 /* PlaygroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaygroundView.m; sourceTree = "<group>"; };
 		50F606321EE43C020000DF02 /* UIDataStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDataStruct.h; sourceTree = "<group>"; };
 		50F606331EE43C020000DF02 /* UIDataStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDataStruct.m; sourceTree = "<group>"; };
+		50F9FDAF1EF141E600064506 /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				5029DB951ED7CD1E008D19E6 /* UIAlgo */,
+				5029DB961ED7CD1E008D19E6 /* Supporting Files */,
 				5029DB941ED7CD1E008D19E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,23 +74,9 @@
 		5029DB951ED7CD1E008D19E6 /* UIAlgo */ = {
 			isa = PBXGroup;
 			children = (
-				5029DB991ED7CD1E008D19E6 /* AppDelegate.h */,
-				5029DB9A1ED7CD1E008D19E6 /* AppDelegate.m */,
-				5029DB9F1ED7CD1E008D19E6 /* Main.storyboard */,
-				5029DBA21ED7CD1E008D19E6 /* Assets.xcassets */,
-				5029DBA41ED7CD1E008D19E6 /* LaunchScreen.storyboard */,
-				5029DBA71ED7CD1E008D19E6 /* Info.plist */,
-				5029DB961ED7CD1E008D19E6 /* Supporting Files */,
-				5029DBAD1ED7CD42008D19E6 /* UIArray.h */,
-				5029DBAE1ED7CD42008D19E6 /* UIArray.m */,
-				500426F81ED859DA004401C0 /* ElementView.h */,
-				500426F91ED859DA004401C0 /* ElementView.m */,
-				500426FB1ED86480004401C0 /* PlaygroundVC.h */,
-				500426FC1ED86480004401C0 /* PlaygroundVC.m */,
-				50B6BB441EE04DDC00210202 /* Playground.h */,
-				50B6BB451EE04DDC00210202 /* Playground.m */,
-				50F606321EE43C020000DF02 /* UIDataStruct.h */,
-				50F606331EE43C020000DF02 /* UIDataStruct.m */,
+				50EBE8591EF112E300274C58 /* DataStruct */,
+				50EBE85D1EF1174200274C58 /* Playground */,
+				50F9FDAF1EF141E600064506 /* Utility.h */,
 			);
 			path = UIAlgo;
 			sourceTree = "<group>";
@@ -94,9 +84,42 @@
 		5029DB961ED7CD1E008D19E6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50EBE85E1EF1199D00274C58 /* PrefixHeader.pch */,
+				5029DBA21ED7CD1E008D19E6 /* Assets.xcassets */,
+				5029DB991ED7CD1E008D19E6 /* AppDelegate.h */,
+				5029DB9A1ED7CD1E008D19E6 /* AppDelegate.m */,
+				5029DBA41ED7CD1E008D19E6 /* LaunchScreen.storyboard */,
+				5029DBA71ED7CD1E008D19E6 /* Info.plist */,
 				5029DB971ED7CD1E008D19E6 /* main.m */,
 			);
 			name = "Supporting Files";
+			path = UIAlgo;
+			sourceTree = "<group>";
+		};
+		50EBE8591EF112E300274C58 /* DataStruct */ = {
+			isa = PBXGroup;
+			children = (
+				500426F81ED859DA004401C0 /* ElementView.h */,
+				500426F91ED859DA004401C0 /* ElementView.m */,
+				50F606321EE43C020000DF02 /* UIDataStruct.h */,
+				50F606331EE43C020000DF02 /* UIDataStruct.m */,
+				5029DBAD1ED7CD42008D19E6 /* UIArray.h */,
+				5029DBAE1ED7CD42008D19E6 /* UIArray.m */,
+			);
+			name = DataStruct;
+			sourceTree = "<group>";
+		};
+		50EBE85D1EF1174200274C58 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				500426FB1ED86480004401C0 /* PlaygroundVC.h */,
+				500426FC1ED86480004401C0 /* PlaygroundVC.m */,
+				50EBE85A1EF1171100274C58 /* PlaygroundVC+play.h */,
+				50EBE85B1EF1171100274C58 /* PlaygroundVC+play.m */,
+				50EBE85F1EF11C5200274C58 /* PlaygroundView.h */,
+				50EBE8601EF11C5200274C58 /* PlaygroundView.m */,
+			);
+			name = Playground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +183,6 @@
 			files = (
 				5029DBA61ED7CD1E008D19E6 /* LaunchScreen.storyboard in Resources */,
 				5029DBA31ED7CD1E008D19E6 /* Assets.xcassets in Resources */,
-				5029DBA11ED7CD1E008D19E6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,9 +196,10 @@
 				5029DBAF1ED7CD42008D19E6 /* UIArray.m in Sources */,
 				5029DB9B1ED7CD1E008D19E6 /* AppDelegate.m in Sources */,
 				500426FD1ED86480004401C0 /* PlaygroundVC.m in Sources */,
+				50EBE8611EF11C5200274C58 /* PlaygroundView.m in Sources */,
 				5029DB981ED7CD1E008D19E6 /* main.m in Sources */,
 				50F606341EE43C020000DF02 /* UIDataStruct.m in Sources */,
-				50B6BB461EE04DDC00210202 /* Playground.m in Sources */,
+				50EBE85C1EF1171100274C58 /* PlaygroundVC+play.m in Sources */,
 				500426FA1ED859DA004401C0 /* ElementView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -184,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5029DB9F1ED7CD1E008D19E6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5029DBA01ED7CD1E008D19E6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5029DBA41ED7CD1E008D19E6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,6 +313,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YXRD5GWEFF;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UIAlgo/PrefixHeader.pch;
 				INFOPLIST_FILE = UIAlgo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -311,6 +328,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = YXRD5GWEFF;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = UIAlgo/PrefixHeader.pch;
 				INFOPLIST_FILE = UIAlgo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

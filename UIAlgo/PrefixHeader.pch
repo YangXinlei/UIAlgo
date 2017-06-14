@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  UIAlgo
+//
+//  Created by yangxinlei on 2017/6/14.
+//  Copyright © 2017年 qunar. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// 指定playground
+#define thePlaygroundViewController     [PlaygroundVC mainPlaygroundVC]
+#define thePlaygroundView               ((UIScrollView *)[PlaygroundVC mainPlaygroundVC].view)
+
+
+#endif /* PrefixHeader_pch */

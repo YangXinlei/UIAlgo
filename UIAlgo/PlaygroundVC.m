@@ -7,15 +7,26 @@
 //
 
 #import "PlaygroundVC.h"
-#import "Playground.h"
+#import "PlaygroundVC+play.h"
+#import "PlaygroundView.h"
 
 @interface PlaygroundVC ()
 
-@property (nonatomic, strong) UIScrollView * playgroundView;
+@property (nonatomic, strong) PlaygroundView * playgroundView;
 
 @end
 
 @implementation PlaygroundVC
+
++ (instancetype)mainPlaygroundVC
+{
+    static dispatch_once_t onceToken;
+    static PlaygroundVC *mainVC;
+    dispatch_once(&onceToken, ^{
+        mainVC = [PlaygroundVC new];
+    });
+    return mainVC;
+}
 
 - (void)loadView
 {
@@ -31,7 +42,7 @@
 {
     [super viewDidAppear:animated];
     
-    [[Playground mainPlayground] play];
+    [self play];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,7 +55,7 @@
 {
     if (! _playgroundView)
     {
-        _playgroundView = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        _playgroundView = [[PlaygroundView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         [_playgroundView setBackgroundColor:[UIColor whiteColor]];
         [_playgroundView setShowsHorizontalScrollIndicator:YES];
         [_playgroundView setShowsVerticalScrollIndicator:YES];
