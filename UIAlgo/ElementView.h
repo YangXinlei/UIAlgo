@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define RADIUS                      40.0
+#define RADIUS                      20
 #define WIDTH                       RADIUS * 2.0
 #define HEIGHT                      WIDTH
 
@@ -34,5 +34,5 @@ typedef enum : NSUInteger {
 @property (nonatomic, copy) NSString    *info;
 @property (nonatomic, assign) BOOL       highlight;
 @property (nonatomic, assign) EVShape    shape;
-
+@property (nonatomic, assign) BOOL       deleted;
 @end

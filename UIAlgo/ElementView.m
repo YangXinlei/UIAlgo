@@ -86,4 +86,20 @@
     }
 }
 
+- (void)setDeleted:(BOOL)deleted
+{
+    if (deleted && ! self.deleted)
+    {
+        _deleted = YES;
+        
+        [UIView animateWithDuration:0.3 animations:^{
+            
+            [self setHighlight:NO];
+            [self setAlpha:0.2];
+        } completion:^(BOOL finished) {
+            [self removeFromSuperview];
+        }];
+    }
+}
+
 @end

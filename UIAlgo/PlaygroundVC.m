@@ -7,7 +7,7 @@
 //
 
 #import "PlaygroundVC.h"
-#import "UIArray.h"
+#import "Playground.h"
 
 @interface PlaygroundVC ()
 
@@ -31,16 +31,7 @@
 {
     [super viewDidAppear:animated];
     
-    UIArray *arr = [[UIArray alloc] initWithFrame:CGRectMake(100, 100, 0, 0)];
-    [self.view addSubview:arr];
-    for (NSUInteger i = 0; i < 10; ++i)
-    {
-        [arr push:@(i)];
-    }
-    for (NSUInteger i = 0; i < 5; ++i)
-    {
-        [arr pop];
-    }
+    [[Playground mainPlayground] play];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,10 +45,10 @@
     if (! _playgroundView)
     {
         _playgroundView = [[UIScrollView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//        [_playgroundView setContentSize:CGSizeMake(1000, 1000)];
-        [_playgroundView setBackgroundColor:[UIColor colorWithRed:0.8 green:0.8 blue:0.8 alpha:0.8]];
+        [_playgroundView setBackgroundColor:[UIColor whiteColor]];
         [_playgroundView setShowsHorizontalScrollIndicator:YES];
         [_playgroundView setShowsVerticalScrollIndicator:YES];
+        [_playgroundView setContentSize:[UIScreen mainScreen].bounds.size];
     }
     
     return _playgroundView;

@@ -15,6 +15,8 @@
 		5029DBA31ED7CD1E008D19E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5029DBA21ED7CD1E008D19E6 /* Assets.xcassets */; };
 		5029DBA61ED7CD1E008D19E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5029DBA41ED7CD1E008D19E6 /* LaunchScreen.storyboard */; };
 		5029DBAF1ED7CD42008D19E6 /* UIArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 5029DBAE1ED7CD42008D19E6 /* UIArray.m */; };
+		50B6BB461EE04DDC00210202 /* Playground.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6BB451EE04DDC00210202 /* Playground.m */; };
+		50F606341EE43C020000DF02 /* UIDataStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 50F606331EE43C020000DF02 /* UIDataStruct.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,10 @@
 		5029DBA71ED7CD1E008D19E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5029DBAD1ED7CD42008D19E6 /* UIArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIArray.h; sourceTree = "<group>"; };
 		5029DBAE1ED7CD42008D19E6 /* UIArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIArray.m; sourceTree = "<group>"; };
+		50B6BB441EE04DDC00210202 /* Playground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playground.h; sourceTree = "<group>"; };
+		50B6BB451EE04DDC00210202 /* Playground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playground.m; sourceTree = "<group>"; };
+		50F606321EE43C020000DF02 /* UIDataStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIDataStruct.h; sourceTree = "<group>"; };
+		50F606331EE43C020000DF02 /* UIDataStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIDataStruct.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,10 @@
 				500426F91ED859DA004401C0 /* ElementView.m */,
 				500426FB1ED86480004401C0 /* PlaygroundVC.h */,
 				500426FC1ED86480004401C0 /* PlaygroundVC.m */,
+				50B6BB441EE04DDC00210202 /* Playground.h */,
+				50B6BB451EE04DDC00210202 /* Playground.m */,
+				50F606321EE43C020000DF02 /* UIDataStruct.h */,
+				50F606331EE43C020000DF02 /* UIDataStruct.m */,
 			);
 			path = UIAlgo;
 			sourceTree = "<group>";
@@ -165,6 +175,8 @@
 				5029DB9B1ED7CD1E008D19E6 /* AppDelegate.m in Sources */,
 				500426FD1ED86480004401C0 /* PlaygroundVC.m in Sources */,
 				5029DB981ED7CD1E008D19E6 /* main.m in Sources */,
+				50F606341EE43C020000DF02 /* UIDataStruct.m in Sources */,
+				50B6BB461EE04DDC00210202 /* Playground.m in Sources */,
 				500426FA1ED859DA004401C0 /* ElementView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
