@@ -20,11 +20,11 @@
 - (void)play
 {
     UIArray *arr = [[UIArray alloc] init];
-    for (NSUInteger i = 0; i < 4; ++i)
+    for (NSUInteger i = 0; i < 10; ++i)
     {
         [arr push:@(i)];
     }
-    for (NSUInteger i = 0; i < 2; ++i)
+    for (NSUInteger i = 0; i < 10; ++i)
     {
         [arr pop];
     }

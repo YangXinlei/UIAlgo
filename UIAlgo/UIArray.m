@@ -54,7 +54,6 @@ typedef void(^UIUpdateBlock)();
         [newElem setTitle:[obj description]];
         [strongSelf.elements addObject:newElem];
         [strongSelf addSubview:newElem];
-        strongSelf.frame = CGRectMake(strongSelf.frame.origin.x, strongSelf.frame.origin.y, MAX(strongSelf.frame.size.width, newElem.frame.size.width), strongSelf.frame.size.height + newElem.frame.size.height);
         
         [strongSelf updateUI];
     } atIndex:0];
@@ -62,7 +61,6 @@ typedef void(^UIUpdateBlock)();
 
 - (id)pop
 {
-    [self setFrame:CGRectMake(100, 100, 100, 100)];
     id obj = [self.array lastObject];
     [self.array removeLastObject];
     
@@ -71,7 +69,9 @@ typedef void(^UIUpdateBlock)();
         __strong typeof(weakSelf) strongSelf = weakSelf;
         if (strongSelf.elements.count)
         {
-//            [strongSelf.elements.lastObject setDeleted:YES];
+            ElementView *toBeRemovedView = strongSelf.elements.lastObject;
+            [toBeRemovedView removeFromSuperview];
+            
             [strongSelf.elements removeLastObject];
         }
         
@@ -108,20 +108,20 @@ typedef void(^UIUpdateBlock)();
 
 - (void)updateUI
 {
-    CGFloat height = thePlaygroundView.contentSize.height, width = thePlaygroundView.contentSize.width;
-    if (self.frame.origin.y + self.frame.size.height >= height)
-    {
-        height *= 2;
-    }
-    if (self.frame.origin.x + self.frame.size.width >= width)
-    {
-        width *= 2;
-    }
-    
-    [thePlaygroundView setContentSize:CGSizeMake(width, height)];
-    [thePlaygroundView scrollRectToVisible:self.frame animated:YES];
-    
-    [self setNeedsDisplay];
+//    CGFloat height = thePlaygroundView.contentSize.height, width = thePlaygroundView.contentSize.width;
+//    if (self.frame.origin.y + self.frame.size.height >= height)
+//    {
+//        height *= 2;
+//    }
+//    if (self.frame.origin.x + self.frame.size.width >= width)
+//    {
+//        width *= 2;
+//    }
+//
+//    [thePlaygroundView setContentSize:CGSizeMake(width, height)];
+//    [thePlaygroundView scrollRectToVisible:self.frame animated:YES];
+//
+//    [self setNeedsDisplay];
 }
 
 - (NSMutableArray *)array
